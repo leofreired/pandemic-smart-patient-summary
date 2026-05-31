@@ -1,0 +1,22 @@
+services:
+  summary-agent:
+    build: .
+    container_name: pandemic-summary-agent
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+
+  iris-health:
+    image: intersystemsdc/irishealth-community:latest
+    container_name: irishealth-community
+    ports:
+      - "52773:52773"
+      - "1972:1972"
+    environment:
+      - ISC_DATA_DIRECTORY=/data
+    volumes:
+      - irisdata:/data
+
+volumes:
+  irisdata:
