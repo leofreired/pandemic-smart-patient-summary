@@ -49,7 +49,7 @@ If AI Hub is not configured, the app still works with rule-based output.
 ### 1) Clone and enter project
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/leofreired/pandemic-smart-patient-summary.git
 cd pandemic-smart-patient-summary
 ```
 
@@ -160,7 +160,7 @@ Response includes:
 docker compose exec summary-agent pytest -q
 ```
 
-## Submission checklist
+## Checklist
 
 - Project is open source and includes a license
 - README is in English with install/run instructions
@@ -169,7 +169,7 @@ docker compose exec summary-agent pytest -q
 - Pandemic-focused scenario is demonstrated (COVID/respiratory risk)
 - Role-based output is demonstrated (ED doctor and patient)
 
-## 3-5 minute demo script
+## Demo script
 
 1. Show architecture quickly: summary-agent + IRIS for Health container.
 2. Run integration check and show FHIR is reachable.
